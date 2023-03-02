@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
-
+# using app_name.apps.AppNameConfig" then remember to put comma
 INSTALLED_APPS = [
     "accounts.apps.AccountsConfig",
     "receipts.apps.ReceiptsConfig",
