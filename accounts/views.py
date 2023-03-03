@@ -21,3 +21,8 @@ def user_log_in(request):
         "form": form,
     }
     return render(request, "accounts/login.html", context)
+
+
+def user_log_out(request):
+    logout(request)
+    return redirect("login")
