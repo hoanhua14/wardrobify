@@ -4,6 +4,7 @@ from receipts.views import (
     create_receipt,
     category_list,
     account_list,
+    create_category,
 )
 
 urlpatterns = [
@@ -11,6 +12,7 @@ urlpatterns = [
     path("create/", create_receipt, name="create_receipt"),
     path("categories/", category_list, name="category_list"),
     path("accounts/", account_list, name="account_list"),
+    path("categories/create/", create_category, name="create_category"),
 ]
 # if i wanna put this url into a link, name goes into {% url name %}
 # then django will go from main url => app's url
